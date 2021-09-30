@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./TodoItem.module.scss";
+
 const TodoItem: React.FC<{
   id: number;
   text: string;

@@ -1,0 +1,47 @@
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    .dropdown {
+        position: absolute;
+        display: flex;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        border-radius: 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        box-shadow: 0px 0px 50px 0px rgba(13, 17, 23, 0.05);
+        .item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: .2s cubic-bezier(0, 0, .5, 1);
+            svg {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                transition: .2s cubic-bezier(0, 0, .5, 1);
+                path {
+                    fill: #383E50;
+                }
+            }
+            &:first-child {
+                margin-bottom: 20px;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+.popup {
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 0px 50px 0px rgba(13, 17, 23, 0.05);
+    padding: 25px;
+    width: 500px;
+}

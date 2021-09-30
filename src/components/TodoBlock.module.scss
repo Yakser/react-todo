@@ -50,3 +50,19 @@
     font-weight: 300;
     user-select: none;
 }
+
+ul {
+    height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #EAEAEA;
+        border-radius: 10000px;
+        &:hover {
+            background-color: darken($color: #EAEAEA, $amount: 5);
+        }
+    }
+}

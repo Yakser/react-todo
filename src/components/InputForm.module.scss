@@ -29,11 +29,11 @@
     }
     &:hover {
         transform: scale(1.1);
-        border-color: #21d4a4;
+        border-color: darken($color: #6ED2B7, $amount: 10);
         svg {
             transform: scale(1.2) rotate(180deg);
             path {
-                fill: #21d4a4;
+                fill: darken($color: #6ED2B7, $amount: 10);
             }
         }
     }
