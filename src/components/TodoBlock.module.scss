@@ -1,0 +1,52 @@
+.todoBlock {
+    width: 500px;
+    height: auto;
+    padding: 35px;
+    background-color: white;
+    box-shadow: 0px 0px 50px 0px rgba(13, 17, 23, 0.05);
+    border-radius: 32px;
+}
+
+.todoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        user-select: none;
+        cursor: pointer;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            user-select: none;
+        }
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            user-select: none;
+        }
+    }
+}
+
+.line {
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    margin: 20px 0 20px;
+    border-radius: 10000px;
+}
+
+.empty {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    user-select: none;
+}
