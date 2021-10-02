@@ -10,7 +10,7 @@ const EditableField: React.FC<IEditableField> = ({ text, storageKey }) => {
   };
   return (
     <div className={styles.editableField}>
-      <input type="text" value={inputValue} onChange={onChangeInputValue}/>
+      <input type="text" value={inputValue} onChange={onChangeInputValue} placeholder={`Enter ${storageKey}...`}/>
     </div>
   );
 };
