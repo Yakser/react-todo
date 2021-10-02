@@ -1,0 +1,23 @@
+.editableField {
+    position: relative;
+    display: flex;
+    
+    input {
+        background-color: transparent;
+        font-size: inherit;
+        font-weight: inherit;
+        border: 0;
+        color: inherit;
+        width: calc(100% - 20px);
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border-bottom: 1px solid transparent;
+        transition: .2s cubic-bezier(0, 0, .5, 1);
+        cursor: default;
+        &:focus {
+            border-bottom-color: #383E50;
+        }
+    }
+    
+}

@@ -4,6 +4,33 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 35px;
+    input {
+        width: 100%;
+        outline: none;
+        border: 0;
+        background-color: #F5F6FA;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 0px rgba(13, 17, 23, 0.05);
+        margin-right: 35px;
+        font-size: 16px;
+        font-family: 'Noto Sans Display', sans-serif;
+        color: #383E50;
+        transition: .2s cubic-bezier(0, 0, .5, 1);
+        &::placeholder {
+            font-size: 16px;
+            font-family: 'Noto Sans Display', sans-serif;
+            color: #BFC3C5;
+            opacity: .7;
+            transition: .2s cubic-bezier(0, 0, .5, 1);
+        }
+        &:hover {
+            box-shadow: 0px 0px 20px 0px rgba(13, 17, 23, 0.1);
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .button {
@@ -39,33 +66,5 @@
     }
     &:active {
         transform: scale(.95);
-    }
-}
-
-input {
-    width: 100%;
-    outline: none;
-    border: 0;
-    background-color: #F5F6FA;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(13, 17, 23, 0.05);
-    margin-right: 35px;
-    font-size: 16px;
-    font-family: 'Noto Sans Display', sans-serif;
-    color: #383E50;
-    transition: .2s cubic-bezier(0, 0, .5, 1);
-    &::placeholder {
-        font-size: 16px;
-        font-family: 'Noto Sans Display', sans-serif;
-        color: #BFC3C5;
-        opacity: .7;
-        transition: .2s cubic-bezier(0, 0, .5, 1);
-    }
-    &:hover {
-        box-shadow: 0px 0px 20px 0px rgba(13, 17, 23, 0.1);
-        &::placeholder {
-            opacity: 1;
-        }
     }
 }

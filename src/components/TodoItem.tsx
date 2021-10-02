@@ -6,12 +6,14 @@ const TodoItem: React.FC<{
   text: string;
   done: boolean;
   deleteTodo(id: number): void;
-}> = ({ text, done, id, deleteTodo }) => {
+  setDoneStatus(id: number, done: boolean): void;
+}> = ({ text, done, id, deleteTodo, setDoneStatus }) => {
   const [itemDone, setItemDone] = useState(done);
+
   const onClickItem = (): void => {
+    setDoneStatus(id, !itemDone);
     setItemDone(!itemDone);
   };
-
 
   return (
     <li
@@ -32,7 +34,7 @@ const TodoItem: React.FC<{
           </g>
         </svg>
       </mark>
-      <span>{text.length >= 37 ? text.slice(0, 37) + '...' : text}</span>
+      <span>{text.length >= 37 ? text.slice(0, 37) + "..." : text}</span>
       <i onClick={() => deleteTodo(id)}>
         <svg
           height="365.696pt"

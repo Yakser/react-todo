@@ -11,32 +11,32 @@ const RegisterForm: React.FC<{ closeModal(): void }> = ({ closeModal }) => {
   });
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (formValues.pwd1 === formValues.pwd2) {
-      try {
-          const auth_details = {
-            password: formValues.pwd1,
-            username: formValues.username,
-            email: formValues.email,
-          };
-        axios
-          .post("/register", auth_details)
-          .then((response) => {
-            if (response.status === 201) {
-                axios.post('/login', auth_details).then(response => {
-                    const token = response.data.token;
-                }
-                )
-              closeModal();
-            } else {
-              alert("Some error happened.");
-            }
-          }); 
-      } catch (e) {
-        console.log(e);
-      }
-    } else {
-      alert("Passwords mismatch!");
-    }
+    // if (formValues.pwd1 === formValues.pwd2) {
+    //   try {
+    //       const auth_details = {
+    //         password: formValues.pwd1,
+    //         username: formValues.username,
+    //         email: formValues.email,
+    //       };
+    //     axios
+    //       .post("/register", auth_details)
+    //       .then((response) => {
+    //         if (response.status === 201) {
+    //             axios.post('/login', auth_details).then(response => {
+    //                 const token = response.data.token;
+    //             }
+    //             )
+    //           closeModal();
+    //         } else {
+    //           alert("Some error happened.");
+    //         }
+    //       }); 
+    //   } catch (e) {
+    //     console.log(e);
+    //   }
+    // } else {
+    //   alert("Passwords mismatch!");
+    // }
   };
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFormValues({ ...formValues, [event.target.name]: event.target.value });
@@ -83,8 +83,8 @@ const RegisterForm: React.FC<{ closeModal(): void }> = ({ closeModal }) => {
         />
         <input type="submit" value="Sign up" />
       </form>
-    </>
+    </> 
   );
-};
+}; 
 
 export default RegisterForm;
