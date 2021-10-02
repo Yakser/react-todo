@@ -1,13 +1,12 @@
 .editableField {
-    position: relative;
     display: flex;
     input {
+        width: calc(100% - 20px);
         background-color: transparent;
         font-size: inherit;
         font-weight: inherit;
         border: 0;
         color: inherit;
-        width: calc(100% - 20px);
         padding: 0;
         margin: 0;
         outline: none;
@@ -25,5 +24,11 @@
             color: #383E50;
             opacity: .4;
         }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .editableField input {
+        width: 100%;
     }
 }

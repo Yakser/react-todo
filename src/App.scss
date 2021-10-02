@@ -9,7 +9,14 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     color: #383E50;
 }
+
 .popup-overlay {
     background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

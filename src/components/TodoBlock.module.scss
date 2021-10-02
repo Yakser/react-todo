@@ -66,4 +66,41 @@ ul {
     }
 }
 
+@media screen and (max-width: 601px) {
+    .todoBlock {
+        width: calc(100% - 50px);
+    }
+    .todoItem {
+        background-color: red;
+        i {
+            opacity: 1;
+        }
+    }
+}
 
+@media screen and (max-width: 510px) {
+    .todoBlock {
+        padding: 25px;
+        .todoHeader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .left {
+                margin-top: 25px;
+                order: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .todoBlock {
+
+        .todoHeader {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
