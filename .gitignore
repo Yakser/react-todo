@@ -4,6 +4,7 @@
 /.pnp
 .pnp.js
 
+/api
 venv
 __pycache__
 
